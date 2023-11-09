@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="website.css">
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./IMG-20230422-WA0001-removebg-preview.png" width="60px" height="70px" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn2">
+                <a href="./Professional CV Resume.jpg">Download CV</a>
+            </button>
+            <div class="burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Your page content goes here -->
+    </div>
+
+    <!-- Home section -->
+
+
+    <section class="home" id="home">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="image-grid">
+                <div class="image-block">
+                    <img src="./IMG-20230422-WA0001-removebg-preview.png" alt="Image 1">
+                    <p>
+                        Anas Saleem is a talented web developer and designer known for creating visually stunning and
+                        user-friendly websites. With a keen eye for detail and a passion for coding, Anas has honed his
+                        skills over the years to deliver top-notch digital experiences. His work seamlessly combines
+                        design aesthetics with technical excellence, making him a valuable asset in the world of web
+                        development.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service-block">
+                <div class="service-icon">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/467072231/01.Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=ff284eb436e56fbb9a903157f22b153a"
+                        alt="Service 1 Icon">
+                </div>
+                <h3>Web Design</h3>
+                <p>
+                    Crafting captivating and user-centric digital interfaces that leave a lasting impression. His design
+                    skills elevate online experiences to new heights.
+
+
+                </p>
+            </div>
+            <div class="service-block">
+                <div class="service-icon">
+                    <img src="https://img.freepik.com/free-psd/web-template-with-landing-page-traditional-italian-food-restaurant_23-2148526098.jpg?size=626&ext=jpg"
+                        alt="Service 2 Icon">
+                </div>
+                <h3>Web Development</h3>
+                <p>
+
+                    I am a skilled web developer, transforming innovative ideas into functional and responsive
+                    websites that perform exceptionally well.
+                </p>
+            </div>
+            <div class="service-block">
+                <div class="service-icon">
+                    <img src="https://t3.ftcdn.net/jpg/03/17/83/00/360_F_317830022_t2c7ZhvWlp68eumsnI4q4Bnw267bPwB9.jpg"
+                        alt="Service 3 Icon">
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>
+                    I am a proficient in digital marketing, driving online success through strategic campaigns and targeted outreach.
+                  </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team section -->
+
+
+    <!-- Contact section -->
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out. I'd love to hear from you!</p>
+
+        <form method="POST" id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Footer section -->
+
+        <footer>
+            <div id="footer-content">
+                <div id="footer-logo">
+                    <img src="./IMG-20230422-WA0001-removebg-preview.png" alt="Your Logo">
+                </div>
+                <div id="footer-info">
+                    <p>&copy; 2023 Your Name</p>
+                    <p>123 Main Street, City, Country</p>
+                    <p>Email: anasaleem063@gmail.com</p>
+                </div>
+                <div id="footer-social">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX3fqQsEqICc6jwZaazKkbgwg5reBD2sGYxcZhWIs&s" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.freepik.com/premium-vector/twitter-logo-square-icon_444390-7003.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="https://pbs.twimg.com/profile_images/1661161645857710081/6WtDIesg_400x400.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>
+
+
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        // Perform form validation here (e.g., check email format)
+
+        // If validation is successful, you can use AJAX to send the form data to your server
+        // Example: fetch('your-backend-endpoint', { method: 'POST', body: new FormData(this) })
+        // Replace 'your-backend-endpoint' with your actual API endpoint
+
+        // Optionally, display a success message to the user
+        alert('Thank you for contacting me!');
+    });
+
+
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu');
+
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+
+
+    });
+
+</script>
