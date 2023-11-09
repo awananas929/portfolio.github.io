@@ -1,0 +1,419 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: Arial, sans-serif;
+
+
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Your Beautiful Font', sans-serif;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Your Beautiful Font', sans-serif;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px 0;
+}
+.menu a:hover{
+    color: rgb(9, 255, 190);
+}
+ 
+header .btn2 a{
+    color: white;
+    text-decoration: none;
+}
+header .btn2:hover{
+    transition: all 0.4s ease;
+    background-color: cyan;
+    
+}
+header .btn2 a:hover{
+    color: blue;
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        right: 0;
+    }
+
+    .menu.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+header .logo img{
+    border: 2px solid white;
+    border-radius:50%;
+}
+
+
+@media (max-width: 264px){
+header .logo img{
+    display: none;
+}
+
+
+}
+
+/* Home section */
+
+
+.home {
+   
+    background-image:url(https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 8px 8px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add media queries to make the design responsive for various screen sizes */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* About section */
+
+/* ... (Previous CSS rules) ... */
+
+.about {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+.about h2{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    margin :10px 10px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-block {
+    width: calc(25% - 20px); /* Adjust the width as per your design */
+    margin: 10px;
+    text-align: center;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.image-block p {
+    margin: 10px 0;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .image-block {
+        width: calc(50% - 20px); /* Adjust the width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-block {
+        width: 100%; /* Stack blocks on smaller screens */
+    }
+}
+
+
+/* Services section */
+
+
+.services {
+
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.services h2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px ;
+    padding: 20px 10px;
+}
+.service-block {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-icon img {
+    max-width: 200px;
+    height: 200px;
+    cursor: pointer;
+    filter: brightness(20%);
+    border: 4px solid black;
+    border-radius: 1SSSS0px;
+
+}
+.service-icon img:hover{
+    filter: brightness(100%);
+    transition: all 0.6s ease;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .service-block {
+        width: 100%; /* Stack service blocks on smaller screens */
+    }
+}
+
+/* Team section */
+
+
+.team {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.team h2{
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+    padding: 20px 10px;
+}
+.team-member {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .team-member {
+        width: 100%; /* Stack team member profiles on smaller screens */
+    }
+}
+
+/* Contact section  */
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 24px;
+}
+
+#contact p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Style the contact form */
+#contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer section  */
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 60px;
+    padding:10px 10px;
+    box-sizing: border-box;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-logo img {
+    width: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#footer-info, #footer-social {
+    text-align: center;
+}
+
+#footer-info p {
+    margin: 5px 0;
+    color: white;
+}
+
+#footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+#footer-social a img{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Hover effect for social icons */
+#footer-social a:hover {
+    color: #007BFF;
+}
